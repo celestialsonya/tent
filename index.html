@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rent of Tent</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="container_main">
+        <div class="black_screen"></div>
+        <img src="./assets/main_block.png" alt="" class="main_block_image">
+        <div class="header">
+            <div class="logo">
+
+                <svg width="111" height="51" viewBox="0 0 112 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.9772 49H21.3551M24.9772 49C26.8168 46.3297 28.6701 43.979 30.5286 41.9207M24.9772 49C31.6175 27.6472 38.6729 3.78449 53.8401 2.0925C51.8303 2.05306 54.5 2.11141 56.5 2.09251C56.5 2.09251 52.9775 2.1058 52.3686 2.18525C49.4213 2.56984 46.6317 3.10974 43.9927 3.78449C41.8165 4.34093 39.7427 4.98907 37.7674 5.71747M21.3551 49C21.3929 41.8446 19.9742 28.7212 13.9979 33.4712C8.0216 38.2212 3.50917 45.8029 2 49C3.38268 37.3873 12.5538 15.0149 37.7674 5.71747M21.3551 49C21.0156 36.7813 23.8226 11.0186 37.7674 5.71747M30.5286 41.9207C31.3946 42.6058 33.1267 44.9808 33.1267 49H36.296M30.5286 41.9207C33.8849 38.2036 37.2582 35.4404 40.5984 33.4712M36.296 49C34.4849 49 38.4097 38.6475 40.5984 33.4712M36.296 49C40.3589 42.5528 47.9985 35.3055 56.5 35.7892M40.5984 33.4712C46.8766 29.7699 51.7932 28.0205 56.5 28.0063"
+                          stroke="#EBD8CA" stroke-width="3"/>
+                    <path d="M86.5228 48.9216H91.1449M87.5228 48.9216C85.6832 46.2512 83.8299 43.9005 81.9714 41.8422M87.5228 48.9216C80.8825 27.5687 73.8271 3.706 58.6599 2.01401C60.6697 1.97457 58 2.03292 56 2.01402C56 2.01402 59.5225 2.02731 60.1314 2.10676C63.0787 2.49135 65.8683 3.03124 68.5073 3.706C70.6835 4.26243 72.7573 4.91058 74.7326 5.63898M91.1449 48.9216C91.1071 41.7661 92.5258 28.6428 98.5021 33.3927C104.478 38.1427 108.991 45.7244 110.5 48.9216C109.117 37.3088 99.9462 14.9364 74.7326 5.63898M91.1449 48.9216C91.4844 36.7028 88.6774 10.9401 74.7326 5.63898M81.9714 41.8422C81.1054 42.5273 79.3733 44.9023 79.3733 48.9216H76.204M81.9714 41.8422C78.6151 38.1252 75.2418 35.3619 71.9016 33.3927M76.204 48.9216C78.0151 48.9216 74.0903 38.569 71.9016 33.3927M76.204 48.9216C72.1411 42.4743 64.5015 35.227 56 35.7107M71.9016 33.3927C65.6234 29.6914 60.7068 27.942 56 27.9278"
+                          stroke="#EBD8CA" stroke-width="3"/>
+                </svg>
+                <p>Rent of Tent</p>
+            </div>
+
+            <div class="contacts">
+                <div class="contact_item">
+                    <p>aalexandrovich</p>
+                    <p class="--text-orange">@mail.ru</p>
+                </div>
+                <div class="contact_item">
+                    <svg class="phone_icon" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="35" height="35" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_35_14" transform="scale(0.01)"/>
+                            </pattern>
+                            <image id="image0_35_14" width="100" height="100"
+                                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAFOElEQVR4nO3dXYgWVRzH8d9f86XQlYrMDKMXNyo19aYwM7uIQEgIuunSq1ooeoMgCjKqm7oR6ia9EOqmm4oKxIgo3DLDCyN7UVF70V22UiSNwl11v12cfWjXLXdmnjPPmXnm/4G92znzP/PbmeeZM3POSs4555xzzjnnnHPO1YPFagi4TNJqSYskzb3Ar/4taUjSTjMbirV/NwZYAnwAnCGfUeBTYHXqPnQNoK9AEOc7B2xM3ZfaAx5pM4jzvZC6T7UFLAdGIgdyDrgzdd9qCXg/chgtO1L3LbXc37KAeZKOS7oofjmSpMVmdriktitvWoFtVqm8MCTpjhLbrrwigVwavYqJbiq5/UorEgjRq5jompLbr7QigRyLXsVEi0puv9KqGIifITn9Fr2Kia4GitTVFYp0/HeFAcKyzJS0oMT2Ky13IGaGpJ9KqGW8xn6OFL00lH3j1tjPkaKBfB+1isn8DMnp26hVTOaB5LQ3ahWTXVVy+5VVNJD9kk7FLOQ8/rU3DzM7J2l35FrGKzPsSmvnL3FntCom+6rEtiutnUD6o1Ux0WlJ20pqu/LaPUP+ilXIOFv99aCCgG2RH+HuB3pS9yuldr/NxLy0DEq6z8wa+4HeNmABcDbCmTEE3Jy6P10B6Pcw4olxA/Z2G9sOSrrLzPZFqMNJEjAXOOVnRoUAWzyMCgFWeBgVA+zOEMYA0Ju61iqLOaq6OcPvDEs6EnGf7v8Al4xdjqbyZOpaGwN4IkMgJ4DLU9faCMBs4EiGUDalrrUxCNPcpjIMLEldayMAM4DDGULZA8xIXW8jABsyBALwbOpaGwGYBnyR8dK1LHW9jQAsJdvE0D3A7NT1NgLwcsZL11upa20EYBawL2MofanrbQRgLWEZjamM4PPUOwN4LeNZMghcm7rerke4N9mZMZRDQGMn7HQMsAg4ljGUvUDZ068dsI6wpkkWO4CLU9fc9YCXMgbSCmVe6po7KdqKclkB0yW9I+n+jJt8LWmdmZU2+xdYKGm9pNslzZE0KulXSb9IOippQOHB2tDYHMvSdDwQKQzTS9ou6e6MmxyUdK+Z/Ry5jh5Jr0raIGlWhk1GFF5dOqp/wzog6UszOxSzto4DegjDJlkNAqsi7n8x8EOO/U+lH1gTq74kgCuBgzk6PUyEO3qgl/DCRWyjwIsxjk0ywHWEv/48tlJwQJLywhiv3ssVEkLJc6ZAuNwtzbmfToQB4at9vdf9Ily+8nymAJwGngOmXFCNzoXR8kknjlupgDnAxwU6/w2w8gLtdjoMCJ8n9Z/eTXhz5b0CB2AY2ERYYXt8eynCaHkg1XGMCphOuKPPOswy3gngKWAmacMAeDT1sYyKMPZ1vODBOET+b2+xPZ23z5VeMcHMtktaIWlXgc1vkLQwbkXlq3QgkmRmAwpDLK+r/AU4k6t8IJJkZiNm9piktZK6evpbLQJpMbPPJS2X9IzC1IauU6tAJMnMzpjZK5KWSfosdT2x1S6QFjM7KOkehaHzHxOXE01tA5EkMxs1szcVlid/WOH5RJX8mXeDWgfSMnYZ2yKpV9LjCk/7qmAg7wZJnhiWjfByxIOS+iTdlqiMM5Lmm9kfifZfTcBK4A2KLW7QjndT973SCCtOPEQYTR4uOYwRoNH/diMXwozh9cBmss0czstfHC+KMLK8Bnge+Ag42UYQbT/z78oP9XYQ/jPDjZJuHfu5RWGg8nqFd7b+y1lJH0raaGbftbN/DyQH4ApJ88d+FigEcVLSLjPLfc/hnHPOOeecc84551yd/QO8TFddWwCZBwAAAABJRU5ErkJggg=="/>
+                        </defs>
+                    </svg>
+
+                    <p>+7 (952)&nbsp;</p>
+                    <p class="--text-orange">40-00-770</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="main_block">
+            <div>
+                <p class="main_title">
+                    Аренда тентов и шатров <br>
+                    для мероприятий
+                </p>
+                <p class="main_subtitle">
+                    Арендуй шатер и сделай <br>свой отдых незабываемым
+                </p>
+            </div>
+
+            <button class="contact_button">
+                Связаться с нами
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.--text-orange {
+    color: var(--text-orange) !important;
+}
+
+:root {
+    --font-smer: 1.05rem;
+    --font-sm: 1.15rem;
+    --font-pre-regular: 1.2rem;
+    --font-regular: 1.3rem;
+    --font-md: 1.5rem;
+    --font-lg: 2rem;
+    --font-lger: 2.2rem;
+    --text-orange: rgba(224, 150, 84, 1);
+    --primary-skin-color: #F2DECF;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.main_block_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+.black_screen {
+    background-color: black;
+    opacity: 0.55;
+    z-index: 6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container_main {
+    height: 100vh;
+}
+
+
+.container {
+    background-color: gray;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    z-index: 7;
+    height: 110px;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contact_item {
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+
+.contact_item:first-of-type {
+    margin-right: 1rem;
+}
+
+.contact_item p {
+    letter-spacing: 1px;
+    font-size: var(--font-sm);
+    color: white
+}
+
+.phone_icon {
+    width: 25px;
+    height: 25px;
+}
+
+.main_block {
+    background-color: rgba(255, 255, 255, 0.06);
+    margin: calc((100vh - 110px - 300px) / 4) auto 0;
+    width: 50%;
+    position: relative;
+    z-index: 7;
+    padding: 2rem 4rem;
+}
+
+.main_title {
+    font-size: var(--font-lger);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.main_subtitle {
+    font-size: var(--font-pre-regular);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.contact_button {
+    border: 0;
+    background-color: var(--primary-skin-color);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--font-pre-regular);
+    font-weight: 700;
+    max-width: 45%;
+    cursor: pointer;
+}
+
+
